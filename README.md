@@ -37,3 +37,4 @@ Future Work:
 8. Rank the blog posts using a Hotness Algorithm like Reddit.com does
 9. Rank the comments using Wilsons Interval or some similar algorithm.
 10. Improve the design of the site! :-P (This is the most boring part! will probably try and delegate it to someone interested in improving the UI)
+11. Add a line break after every 60-70 characters
