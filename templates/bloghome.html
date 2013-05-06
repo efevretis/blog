@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="/static/main.css" />
+    <title>Home</title>
+  </head>
+
+  </style>
+  <body>
+    <a href = "/blog" class="main-title">
+      Blog your thoughts and ideas Here!
+    </a>
+    <div id="content">
+      {% for each_post in posts %}
+      <div class="post">
+        <div class="post-heading">
+          <div class="post-title">{{each_post.subject}}</div> 
+          <div class="post-date">{{each_post.created_time.strftime("%d %b %Y")}}</div>
+        </div>
+        <!--pre tag preserves the white space -->
+        <pre class="post-content">{{each_post.content}}</pre>
+      </div>
+      {%endfor%}
+    </div>
+  </body>
+</html>
